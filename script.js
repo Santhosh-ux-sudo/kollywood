@@ -54,8 +54,8 @@ start_btn.addEventListener("click",function(){
     warning2.textContent=""
     a=given_name.value
     b=given_hint.value
-
-  
+    b=b.toUpperCase()
+    a=a.toUpperCase()
 
     let flag=1
     for(let i=0;i<a.length;i++){
@@ -87,7 +87,7 @@ start_btn.addEventListener("click",function(){
         let y=[]
         for(let i=0;i<a.length;i++){
             if(a[i]===b){
-                y.push(b.toUpperCase())
+                y.push(b)
             }else{
                 y.push("_")
             }
