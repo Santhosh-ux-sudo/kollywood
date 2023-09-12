@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Sacramento&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', sans-serif;
+    min-height: 100vh;
+}
+.index{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+h1{
+    font-size: 35px;
+    margin: 6px 0;
+}
+.btns{
+    margin-top: 20px;
+}
+.movies_name,.self_play{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    font-size: 19px;
+    font-family: 'Cinzel',sans-serif;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+.movies_name{
+    margin-right: 10px;
+    background-color: navy;
+}
+.self_play{
+    margin-left: 10px;
+    background-color: #670505;
+    
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.user div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topic{
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+input{
+    display: inline-block;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 35px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background-color: rgb(177, 226, 246);
+    font-family: 'Poppins',sans-serif;
+}
+
+.start{
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: 'Cinzel', sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.warning1, .warning2{
+    font-size: 10px;
+    opacity: 0;
+    font-family: monospace;
+    margin-bottom: 12px;
+    color: red;
+}
+
+.active1{
+    opacity: 1;
+}
+
+.active {
+    display: none;
+}
+.passive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.kolly{
+    display: flex;
+    gap: 2px;
+}
+.wood{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    background-color: rgb(217, 255, 0);
+    text-align: center;
+
+}
+
+.wo{
+    position: absolute;
+    height: 40px;
+    transform: rotate(45deg);
+    width: 1px;
+    background-color: red;
+    top:0;
+    left: 50%;
+    display: none;
+}
+
+
+.hint_name{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px 0;
+    letter-spacing: 10px;
+}
+
+.alphabets{
+    display: flex;
+    flex-wrap: wrap;
+    width: 204px;
+    gap: 1px;
+    justify-content: center;
+}
+.abcd{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/* .abcd:nth-child(5){
+    background-color: red;
+    color: white;
+}
+
+.abcd:nth-child(12) {
+    background-color: #09cd09;
+    color: white;
+} */
+
+.result{
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.pointernone{
+    pointer-events: none;
+}
