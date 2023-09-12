@@ -19,11 +19,51 @@ const user=document.querySelector(".user")
 let a,b
 
 
-let lists=["JAILOR","BEAST","PIZZA","MAYA","LATHTHI","JILLA"]
-let lists_hint=["__I___","__A__","____A","_A_A","_A_____","_I___"]
+let lists=[
+  'AADUKALAM',    'ALAIPAYUTHEY', 'ANBESIVAM',   'ANNIYAN',
+  'ARUL',         'ARUVI',        'ASURAN',      'ATTAKATHI',
+  'AYAN',         'BAASHA',       'BEAST',       'BOMBAY',
+  'CHANDRAMUKHI', 'CUCKOO',       'ENTHIRAN',    'ETHIRNEECHAL',
+  'FRIENDS',      'GHAJINI',      'GHILLI',      'HEYRAM',
+  'INDIAN',       'IRAIVI',       'IRUVAR',      'JAIBHIM',
+  'JAILOR',       'JEEVA',        'JIGARTHANDA', 'JILLA',
+  'JOKER',        'KAITHI',       'KALAVANI',    'KAYAL',
+  'KUMKI',        'LATHTHI',      'MADRAS',      'MANDELA',
+  'MANKATHA',     'MAYA',         'MIRUTHAN',    'MOUNARAGAM',
+  'MOZHI',        'MUDHALVAN',    'MUTHU',       'NAADODIGAL',
+  'NANBAN',       'NAYAKAN',      'PADAIYAPPA',  'PAPANASAM',
+  'PARADESI',     'PASANGA',      'PERANBU',     'PITHAMAGAN',
+  'PIZZA',        'POLLADHAVAN',  'PUTHUPETTAI', 'RAAM',
+  'RAAVANAN',     'ROJA',         'SAAMY',       'SAATTAI',
+  'SACHIEN',      'SIVAJI',       'SUPERDELUXE', 'THALAPATHI',
+  'THANIORUVAN',  'THEAN',        'THEGIDI',     'THERI',
+  'THUPPAKKI',    'VADACHENNAI',  'VEYIL',       'VIKRAM',
+  'VIKRAMVEDHA',  'VIRUMANDI',    'VISAARANAI'
+]
+let lists_hint=[
+  '________M',    '__________E_', 'A______A_',   '___I___',
+  'A___',         '____I',        '_____N',      '________I',
+  '___N',         '___S__',       '__A__',       '____A_',
+  '___N________', '_U____',       '___H____',    '__________A_',
+  '___E___',      '__A____',      '_H____',      '_E____',
+  '____A_',       '____V_',       '__U___',      '_A_____',
+  '_A____',       '____A',        '_____T_____', '____A',
+  '___E_',        '___T__',       '_______I',    '_A_A_',
+  '____I',        '_A_____',      '_A__A_',      '__N____',
+  '__N_____',     '__Y_',         '_______N',    'M________M',
+  '____I',        '___H_____',    '___H_',       '____O_____',
+  '___B__',       '____K__',      '____I_____',  '________M',
+  '_______I',     '____N__',      'P______',     '_________N',
+  '____A',        '______H____',  '__________I', '___M',
+  'R_______',     '___A',         '___M_',       '______I',
+  '______N',      '___A__',       '___E__E___E', '_________I',
+  'T__________',  '___A_',        '__E____',     '____I',
+  '_____A___',    '__________I',  '_E___',       '____A_',
+  '_________H_',  'V________',    '__S_______'
+]
 
 function random(){
-    return Math.floor(Math.random()*6)
+    return Math.floor(Math.random()*lists.length)
 }
 
 
